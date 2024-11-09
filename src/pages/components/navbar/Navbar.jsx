@@ -1,54 +1,109 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <>
-        <header className="w-full fixed top-0 left-0 flex justify-between items-center py-4 bg-gray-900 dark:bg-gray-800 bg-opacity-90 shadow-lg z-50">
-  <div className="flex items-center pl-6">
-    <head>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-    </head>
-    <Link to="/"><div className="flex items-center justify-center">
-      <h1 className="text-5xl sm:text-6xl md:text-7xl font-dancing-script text-blue-400 dark:text-blue-500 transform transition-all duration-300 hover:scale-110 hover:text-blue-500 tracking-wide shadow-lg">
-        Sijan
-      </h1>
-    </div></Link>
-  </div>
+    <header className="w-full fixed top-0 left-0 flex justify-between items-center py-4 bg-gray-900 dark:bg-gray-800 bg-opacity-90 shadow-lg z-50 h-16">
+      <div className="flex items-center pl-6">
+        <Link to="/">
+          <div className="flex items-center justify-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-cursive text-blue-400 dark:text-blue-500 transform transition-all duration-300 hover:scale-110 hover:text-blue-500 tracking-wide shadow-2xl hover:shadow-xl italic">
+            Sijan
+          </h1>
+          </div>
+        </Link>
+      </div>
+      <button
+        onClick={toggleMenu}
+        className="pointer-cursor md:hidden block mr-4 p-1 rounded-full bg-white text-gray-800 hover:bg-gray-100 hover:text-gray-800 transition duration-300 z-50"
+        style={{ zIndex: 1000 }}
+      >
+        <i className="fa-solid fa-bars text-gray-700 text-3xl"></i>
+      </button>
+      <div
+        className={`${
+          isMenuOpen ? 'block' : 'hidden'
+        } absolute top-full left-0 w-full bg-gray-900 dark:bg-gray-800 md:relative md:top-auto md:left-auto md:flex md:items-center md:w-auto pr-4 transition duration-300 ease-in-out`}
+        id="menu"
+      >
+        <nav>
+          <ul className="flex flex-col md:flex-row items-center text-base text-gray-100 dark:text-gray-100 pt-4 md:pt-0 space-y-4 md:space-y-0 md:space-x-8 px-4 md:px-0">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-blue-500' 
+                    : 'text-rose-500 hover:text-rose-400 hover:bg-gray-800'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-blue-500'
+                    : 'text-rose-500 hover:text-rose-400 hover:bg-gray-800'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About Me
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/education"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-blue-500'
+                    : 'text-rose-500 hover:text-rose-400 hover:bg-gray-800'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Education
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-blue-500'
+                    : 'text-rose-500 hover:text-rose-400 hover:bg-gray-800'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-blue-500'
+                    : 'text-rose-500 hover:text-rose-400 hover:bg-gray-800'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
-  {/* Mobile Menu Toggle */}
-  <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block mr-4">
-    <svg
-      className="fill-current text-gray-200"
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-    >
-      <title>menu</title>
-      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-    </svg>
-  </label>
-  <input className="hidden" type="checkbox" id="menu-toggle" />
-
-  {/* Navbar Menu */}
-  <div className="hidden md:flex md:items-center md:w-auto w-full pr-4" id="menu">
-    <nav>
-      <ul className="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-100 pt-4 md:pt-0">
-        <Link to="/"><li><a className="md:p-4 py-3 px-0 block text-rose-500 hover:text-rose-400 transition duration-300">Home</a></li></Link>
-        <Link to="/about"><li><a className="md:p-4 py-3 px-0 block hover:text-gray-300 transition duration-300">About Me</a></li></Link>
-        <Link to="/education"><li><a className="md:p-4 py-3 px-0 block hover:text-gray-300 transition duration-300">Education</a></li></Link>
-        <Link to="/projects"><li><a className="md:p-4 py-3 px-0 block hover:text-gray-300 transition duration-300">Projects</a></li></Link>
-        <Link to="/contact"><li><a className="md:p-4 py-3 px-0 block hover:text-gray-300 transition duration-300">Contact</a></li></Link>
-      </ul>
-    </nav>
-  </div>
-</header>
-    </>
-  )
-}
-
-export default Navbar
+export default Navbar;

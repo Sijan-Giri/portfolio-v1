@@ -3,10 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-    <footer className="bg-gray-900 dark:bg-gray-800 text-gray-100 dark:text-gray-200 py-12">
+    <footer className="bg-gray-900 dark:bg-gray-800 text-gray-100 dark:text-gray-200 py-24">
   <div className="container mx-auto px-6">
     <div className="flex flex-wrap justify-between">
-      {/* Left Section - Contact Info */}
       <div className="w-full sm:w-1/2 md:w-1/3 text-center md:text-left mb-6 md:mb-0">
         <h3 className="text-2xl font-semibold text-rose-500 mb-4">Contact Info</h3>
         <p className="text-lg mb-2">
@@ -19,8 +18,6 @@ const Footer = () => {
           <strong>Location:</strong> Kathmandu, Nepal
         </p>
       </div>
-
-      {/* Center Section - Social Media Links */}
       <div className="w-full sm:w-1/2 md:w-1/3 text-center mb-6 md:mb-0">
         <h3 className="text-2xl font-semibold text-rose-500 mb-4">Follow Me</h3>
         <div className="flex justify-center gap-6">
@@ -37,8 +34,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
-      {/* Right Section - Quick Links */}
       <div className="w-full sm:w-1/2 md:w-1/3 text-center md:text-right">
         <h3 className="text-2xl font-semibold text-rose-500 mb-4">Quick Links</h3>
         <ul className="space-y-2">
@@ -57,8 +52,6 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-
-    {/* Bottom Section - Copyright */}
     <div className="text-center mt-12">
       <p className="text-sm text-gray-400">
         &copy; {new Date().getFullYear()} Sijan Giri. All rights reserved.
