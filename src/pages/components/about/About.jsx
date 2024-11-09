@@ -30,10 +30,10 @@ const About = () => {
           <li>✔️ **Full-stack Development**</li>
           <li>✔️ **MERN Stack** (MongoDB, Express.js, React.js, Node.js)</li>
           <li>✔️ **TypeScript** & **JavaScript**</li>
-          <li>✔️ **REST APIs** & **GraphQL**</li>
+          <li>✔️ **REST APIs** & **RESTFUL APIs**</li>
           <li>✔️ **Version Control (Git, GitHub)**</li>
           <li>✔️ **UI/UX Design** & **Responsive Web Design**</li>
-          <li>✔️ **Cloud Platforms** (Heroku, Vercel, AWS)</li>
+          <li>✔️ **Cloud Platforms** (Render, Vercel, MongoDB Atlas)</li>
         </ul>
       </div>
     </div>

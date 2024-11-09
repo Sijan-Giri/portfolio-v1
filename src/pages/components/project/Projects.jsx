@@ -31,7 +31,7 @@ const Projects = () => {
               </a>
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
-              <h3 className="text-2xl font-semibold text-rose-500">E-commerce Platform (Frontend)</h3>
+              <h3 className="text-2xl font-semibold text-rose-500">E-commerce Platform (User)</h3>
               <p className="text-gray-400 text-lg mt-2">React, Node.js, MongoDB, Redux</p>
               <p className="text-gray-300 mt-4">
                 A dynamic e-commerce platform built using the MERN stack, featuring user authentication, product listings, shopping cart functionality, 
@@ -112,6 +112,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
+      <div className="border-t border-gray-700 my-1"></div>
       <Footer />
     </>
   );

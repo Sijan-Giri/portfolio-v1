@@ -91,6 +91,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <div className="border-t border-gray-700 my-1"></div>
       <Footer />
     </>
   );
