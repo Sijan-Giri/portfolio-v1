@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -34,21 +35,21 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 md:w-1/3 text-center md:text-right">
             <h3 className="text-3xl font-semibold text-rose-500 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="/" className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Home</a>
-              </li> 
-              <li>
-                <a href="/about" className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">About Me</a>
-              </li>
-              <li>
-                <a href="/education" className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Education</a>
-              </li>
-              <li>
-                <a href="/projects" className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Projects</a>
-              </li>
-              <li>
-                <a href="/contact" className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Contact</a>
-              </li>
+              <Link to="/"><li>
+                <a className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Home</a>
+              </li></Link> 
+              <Link to="/about"><li>
+                <a className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">About Me</a>
+              </li></Link>
+              <Link to="/education"><li>
+                <a className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Education</a>
+              </li></Link>
+              <Link to="/projects"><li>
+                <a className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Projects</a>
+              </li></Link>
+              <Link to="/contact"><li>
+                <a className="text-xl text-gray-300 hover:text-gray-200 transition duration-300">Contact</a>
+              </li></Link>
             </ul>
           </div>
         </div>

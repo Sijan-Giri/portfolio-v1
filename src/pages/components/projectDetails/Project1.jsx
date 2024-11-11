@@ -3,7 +3,7 @@ import Navbar from '../navbar/Navbar'
 import Footer from '../footer/Footer'
 
 const Project1 = () => {
-  return (
+  return ( 
     <>
     <Navbar />
     <section class="text-gray-600 body-font">
@@ -20,7 +20,7 @@ const Project1 = () => {
             For customers who create accounts, the app offers additional features like order history, saved favorites, and the ability to track the status of their orders in real time. The design is responsive, ensuring a consistent and mobile-friendly experience across various devices. With a clean and intuitive interface, the Food Management Frontend makes ordering food an engaging and hassle-free experience.</p>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="/images/Screenshot%202024-11-09%20162049.png" />
+            <img class="object-cover object-center rounded" alt="hero" src="https://sijangiri.com.np/public/images/Screenshot%202024-11-09%20162049.png" />
         </div>
     </div>
 </section>

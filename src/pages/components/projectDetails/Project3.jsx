@@ -20,7 +20,7 @@ const Project3 = () => {
             The backend is also responsible for integrating the frontend with the necessary APIs and logic to create a smooth interaction between users and the platform. Whether it's fetching available food items, managing user authentication, or processing orders, the backend ensures all data is synchronized between the frontend and database. This robust backend setup guarantees efficient data handling, real-time order processing, and overall operational efficiency, making the Food Management System (Backend) an essential component of the food ordering process.</p>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="\images\Screenshot 2024-11-09 162426.png" />
+            <img class="object-cover object-center rounded" alt="hero" src="https://sijangiri.com.np/public/images/Screenshot%202024-11-09%20162426.png" />
         </div>
     </div>
 </section>

@@ -9,7 +9,7 @@ const MyProjects = () => {
         <div className="flex flex-wrap justify-between gap-8 px-4">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 transition duration-300 transform hover:scale-105 hover:shadow-2xl">
             <a target="_blank" rel="noopener noreferrer">
-              <img className="rounded-t-lg w-full h-56 object-cover" src="/images/Screenshot%202024-11-09%20162049.png" alt="project-1" />
+              <img className="rounded-t-lg w-full h-56 object-cover" src="https://sijangiri.com.np/public/images/Screenshot%202024-11-09%20162049.png" alt="project-1" />
             </a>
             <div className="p-6">
               <a target="_blank" rel="noopener noreferrer">
@@ -30,7 +30,7 @@ const MyProjects = () => {
           </div>
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 transition duration-300 transform hover:scale-105 hover:shadow-2xl">
             <a target="_blank" rel="noopener noreferrer">
-              <img className="rounded-t-lg w-full h-56 object-cover" src="\images\Screenshot 2024-11-09 162349.png" alt="project-2" />
+              <img className="rounded-t-lg w-full h-56 object-cover" src="https://sijangiri.com.np/public/images/Screenshot%202024-11-09%20162349.png" alt="project-2" />
             </a>
             <div className="p-6">
               <a target="_blank" rel="noopener noreferrer">
@@ -51,7 +51,7 @@ const MyProjects = () => {
           </div>
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 transition duration-300 transform hover:scale-105 hover:shadow-2xl">
             <a target="_blank" rel="noopener noreferrer">
-              <img className="rounded-t-lg w-full h-56 object-cover" src="\images\Screenshot 2024-11-09 162426.png" alt="project-3" />
+              <img className="rounded-t-lg w-full h-56 object-cover" src="https://sijangiri.com.np/public/images/Screenshot%202024-11-09%20162426.png" alt="project-3" />
             </a>
             <div className="p-6">
               <a target="_blank" rel="noopener noreferrer">

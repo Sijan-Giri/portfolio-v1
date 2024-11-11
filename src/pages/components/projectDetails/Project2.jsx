@@ -20,7 +20,7 @@ const Project2 = () => {
             The admin panel also includes a comprehensive order management system, where admins can track and manage customer orders in real time. Admins can view order statuses, update order progress, and ensure timely fulfillment. This centralized control helps optimize the food service process, improves customer satisfaction, and supports effective backend operations, making the Food Management System (Admin) an essential tool for any food service business.</p>
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="\images\Screenshot 2024-11-09 162349.png" />
+            <img class="object-cover object-center rounded" alt="hero" src="https://sijangiri.com.np/public/images/Screenshot%202024-11-09%20162349.png" />
         </div>
     </div>
 </section>
