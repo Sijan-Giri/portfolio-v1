@@ -44,7 +44,7 @@ const Hero = () => {
                 I'm <span className="text-green-500 dark:text-green-700" ref={typingRef}></span>
               </h3>
               <p className="mt-4 text-gray-300 dark:text-gray-700 text-sm sm:text-base">
-                Experienced full-stack developer with hands-on expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js), with additional experience in TypeScript and Redux. Skilled in building dynamic, user-friendly applications like eCommerce platforms and content management systems. Passionate about creating clean, efficient code and delivering robust solutions.
+                Experienced full-stack developer with hands-on expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js), with additional experience in TypeScript , Redux & OOP. Skilled in building dynamic, user-friendly applications like eCommerce platforms and content management systems. Passionate about creating clean, efficient code and delivering robust solutions.
               </p>
               <a href="https://www.linkedin.com/in/sijan-giri-a43882335/">
                 <button className="mt-4 sm:mt-2 px-6 sm:px-8 py-3 bg-rose-500 text-white rounded-full shadow-lg hover:bg-rose-600 transition duration-300 transform hover:scale-105">

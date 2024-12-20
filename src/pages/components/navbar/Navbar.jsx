@@ -9,19 +9,23 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 left-0 flex justify-between items-center py-4 bg-gray-900 dark:bg-gray-800 bg-opacity-90 shadow-lg z-50 h-16">
+    <header className="w-full fixed top-0 left-0 flex justify-between items-center py-8 bg-gray-900 dark:bg-gray-800 bg-opacity-90 shadow-lg z-50 h-20">
       <div className="flex items-center pl-6">
         <Link to="/">
           <div className="flex items-center justify-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src= "https://sijangiri.com.np/public/images/Sijan-Logo.png" />
-        </div>
+            <div className="lg:w-24 md:w-20 w-16">
+              <img
+                className="h-auto object-contain rounded-full shadow-md hover:scale-110 transition-transform duration-300 ease-in-out"
+                alt="Sijan Logo"
+                src="https://sijangiri.com.np/public/images/Sijan-Logo.png"
+              />
+            </div>
           </div>
         </Link>
       </div>
       <button
         onClick={toggleMenu}
-        className="pointer-cursor md:hidden block mr-4 p-1 rounded-full bg-white text-gray-800 hover:bg-gray-100 hover:text-gray-800 transition duration-300 z-50"
+        className="pointer-cursor md:hidden block mr-4 p-2 rounded-full bg-gray-100 text-gray-800 hover:bg-gray-200 hover:text-gray-900 transition duration-300 z-50"
         style={{ zIndex: 1000 }}
       >
         <i className="fa-solid fa-bars text-gray-700 text-3xl"></i>
@@ -39,7 +43,7 @@ const Navbar = () => {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? 'text-blue-500' 
+                    ? 'text-blue-500'
                     : 'text-rose-500 hover:text-rose-400 hover:bg-gray-800'
                 }
                 onClick={() => setIsMenuOpen(false)}
